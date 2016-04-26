@@ -3,6 +3,11 @@
 #include "controller.hh"
 #include "timestamp.hh"
 
+#define MULT_DECREASE 2
+#define ADD_INCREASE 2 
+
+
+
 using namespace std;
 
 /* Default constructor */
@@ -14,7 +19,7 @@ Controller::Controller( const bool debug )
 unsigned int Controller::window_size( void )
 {
   /* Default: fixed window size of 100 outstanding datagrams */
-  unsigned int the_window_size = 50;
+  unsigned int the_window_size = 13;
 
   if ( debug_ ) {
     cerr << "At time " << timestamp_ms()
@@ -46,7 +51,7 @@ void Controller::ack_received( const uint64_t sequence_number_acked,
 			       const uint64_t recv_timestamp_acked,
 			       /* when the acknowledged datagram was received (receiver's clock)*/
 			       const uint64_t timestamp_ack_received )
-                               /* when the ack was received (by sender) */
+             /* when the ack was received (by sender) */
 {
   /* Default: take no action */
 
