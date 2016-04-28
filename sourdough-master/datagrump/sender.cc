@@ -25,7 +25,7 @@ private:
      next expects will be acknowledged by the receiver */
   uint64_t next_ack_expected_;
 
-  void send_datagram( void );
+  void send_datagram( bool );
   void got_ack( const uint64_t timestamp, const ContestMessage & msg );
   bool window_is_open( void );
 
@@ -95,7 +95,7 @@ void DatagrumpSender::got_ack( const uint64_t timestamp,
 			    timestamp );
 }
 
-void DatagrumpSender::send_datagram( void )
+void DatagrumpSender::send_datagram( bool timeout_happened )
 {
   /* All messages use the same dummy payload */
   static const string dummy_payload( 1424, 'x' );
@@ -106,7 +106,7 @@ void DatagrumpSender::send_datagram( void )
 
   /* Inform congestion controller */
   controller_.datagram_was_sent( cm.header.sequence_number,
-				 cm.header.send_timestamp );
+				 cm.header.send_timestamp, timeout_happened );
 }
 
 bool DatagrumpSender::window_is_open( void )
@@ -124,7 +124,7 @@ int DatagrumpSender::loop( void )
   poller.add_action( Action( socket_, Direction::Out, [&] () {
 	/* Close the window */
 	while ( window_is_open() ) {
-	  send_datagram();
+	  send_datagram(false);
 	}
 	return ResultType::Continue;
       },
@@ -148,7 +148,8 @@ int DatagrumpSender::loop( void )
       return ret.exit_status;
     } else if ( ret.result == PollResult::Timeout ) {
       /* After a timeout, send one datagram to try to get things moving again */
-      send_datagram();
+      send_datagram(true);
+      // cout << "timeout" <<endl; 
     }
   }
 }
