@@ -4,14 +4,15 @@
 #include "timestamp.hh"
 #include <map>
 
-#define MULT_DECREASE 2
+#define MULT_DECREASE 4
 #define ADD_INCREASE_DEFAULT 1
 
 #define TRIGGER_LOW 49
-#define TRIGGER_HIGH 95
+#define TRIGGER_HIGH 90
+#define TRIGGER_SUPER_HIGH 150
 
 #define ALPHA 0.5 
-#define BETA 0.4 
+#define BETA 0.2 
 
 
 
@@ -180,6 +181,9 @@ void Controller::ack_received( const uint64_t sequence_number_acked,
     additive_increase *= 1.01; 
     // cout<< "Trigger low" <<endl; 
   } 
+  else if(new_rtt > TRIGGER_SUPER_HIGH){
+    rate /= MULT_DECREASE;
+  }
   else if(new_rtt > TRIGGER_HIGH){
     rate *= ( 1-beta *(1-(TRIGGER_HIGH/(1+new_rtt))));
     // cout<< "Trigger High" <<endl; 
@@ -270,5 +274,5 @@ void Controller::ack_received( const uint64_t sequence_number_acked,
    before sending one more datagram */
 unsigned int Controller::timeout_ms( void )
 {
-  return 50;
+  return 32;
 }
