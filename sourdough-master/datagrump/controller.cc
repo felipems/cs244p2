@@ -5,8 +5,10 @@
 
 #define MULT_DECREASE 2
 #define ADD_INCREASE 2 
-#define RTT_MAX_THRESHOLD 200
-#define RTT_MIN_THRESHOLD 50
+#define RTT_MAX_THRESHOLD 110
+#define RTT_MIN_THRESHOLD 40
+#define MIN_WIN_SIZE 1
+#define MAX_WIN_SIZE 1000
 
 using namespace std;
 unsigned int the_window_size;
@@ -16,7 +18,13 @@ map<uint64_t, uint64_t> datagram_sent;
 Controller::Controller( const bool debug )
   : debug_( debug )
 {
-  debug_ = true;
+  /* Used as we tweaked constants, so we had a record of
+     our score and constants at the time.
+  cout << "RTT_MAX_THRESHOLD = " << RTT_MAX_THRESHOLD
+    << "\n RTT_MIN_THRESHOLD = " << RTT_MIN_THRESHOLD
+    << "\n MIN_WIN_SIZE = " << MIN_WIN_SIZE 
+    << "\n MAX_WIN_SIZE = " << MAX_WIN_SIZE << endl;
+  debug_ = false;*/
   the_window_size = 13;
 }
 
@@ -69,12 +77,10 @@ void Controller::ack_received( const uint64_t sequence_number_acked,
   uint64_t rtt = ack_time + (recv_timestamp_acked - datagram_sent_timestamp);
 
   /* Adjust the window if thresholds are reached. */
-  /*
-  if (rtt > RTT_MAX_THRESHOLD)
+  if (rtt > RTT_MAX_THRESHOLD && the_window_size > MIN_WIN_SIZE)
     the_window_size -= ADD_INCREASE;
-  else if (rtt < RTT_MIN_THRESHOLD)
+  else if (rtt < RTT_MIN_THRESHOLD && the_window_size < MAX_WIN_SIZE)
     the_window_size += ADD_INCREASE;
-    */
 
   datagram_sent.erase(sequence_number_acked);
 
