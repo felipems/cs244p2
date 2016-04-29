@@ -3,7 +3,12 @@
 #include "controller.hh"
 #include "timestamp.hh"
 
+#define MULT_DECREASE 2
+#define ADD_INCREASE_DEFAULT 1
+
 using namespace std;
+unsigned int the_window_size = 13;
+
 
 /* Default constructor */
 Controller::Controller( const bool debug )
@@ -14,7 +19,6 @@ Controller::Controller( const bool debug )
 unsigned int Controller::window_size( void )
 {
   /* Default: fixed window size of 100 outstanding datagrams */
-  unsigned int the_window_size = 50;
 
   if ( debug_ ) {
     cerr << "At time " << timestamp_ms()
@@ -27,10 +31,14 @@ unsigned int Controller::window_size( void )
 /* A datagram was sent */
 void Controller::datagram_was_sent( const uint64_t sequence_number,
 				    /* of the sent datagram */
-				    const uint64_t send_timestamp )
+				    const uint64_t send_timestamp, bool timeout_happened )
                                     /* in milliseconds */
 {
   /* Default: take no action */
+  if ( timeout_happened){
+     the_window_size = (the_window_size/MULT_DECREASE) +1; 
+      cout << "timeout!!" <<endl; 
+  }
 
   if ( debug_ ) {
     cerr << "At time " << send_timestamp
@@ -49,6 +57,9 @@ void Controller::ack_received( const uint64_t sequence_number_acked,
                                /* when the ack was received (by sender) */
 {
   /* Default: take no action */
+  if( (rand()% 900 + 1) == 7) {
+      the_window_size += ADD_INCREASE_DEFAULT;
+  }
 
   if ( debug_ ) {
     cerr << "At time " << timestamp_ack_received
