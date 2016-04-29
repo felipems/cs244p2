@@ -9,9 +9,9 @@
 
 #define TRIGGER_LOW 49
 #define TRIGGER_HIGH 90
-#define TRIGGER_SUPER_HIGH 150
+#define TRIGGER_SUPER_HIGH 250
 
-#define ALPHA 0.5 
+
 #define BETA 0.2 
 
 
@@ -28,12 +28,13 @@ typedef struct packet{
 using namespace std;
 static unsigned int the_window_size = 13;
 static double prev_rtt = 200;
-static double rate = 1;
+static double rate = 13;
 static double alpha = 0.2;
 static double beta = BETA;
 static double min_rtt = 10000;  
 static double rtt_diff = 0; 
 static double additive_increase = 1; 
+static double mult_decrease = MULT_DECREASE; 
 // static int add
 // static int snowball_hi = 1;
 // static int snowball_lo = 4;
@@ -91,6 +92,8 @@ void Controller::datagram_was_sent( const uint64_t sequence_number,
 
   //    the_window_size += ADD_INCREASE_DEFAULT;
   // }
+
+
   /* Default: take no action */
   // packet* new_packet = ( packet * )malloc(sizeof(packet));
   // new_packet->sequence_number = sequence_number;
@@ -153,13 +156,14 @@ void Controller::ack_received( const uint64_t sequence_number_acked,
 			       const uint64_t timestamp_ack_received )
              /* when the ack was received (by sender) */
 {
-
+  double new_rtt;
   uint64_t time_sent = seq_cache[sequence_number_acked];
-  if (time_sent == 0) return;   
-
+  if (time_sent == 0) 
+      new_rtt = prev_rtt;
+  
+  new_rtt =  timestamp_ack_received - time_sent;  
   seq_cache.erase(sequence_number_acked);
 
-  double new_rtt =  timestamp_ack_received - time_sent; 
 
   // cout<< "new_rtt is: "<< new_rtt <<endl; 
 
@@ -179,26 +183,31 @@ void Controller::ack_received( const uint64_t sequence_number_acked,
   if(new_rtt < TRIGGER_LOW){
     rate+=additive_increase;
     additive_increase *= 1.01; 
+     mult_decrease = MULT_DECREASE; 
     // cout<< "Trigger low" <<endl; 
   } 
   else if(new_rtt > TRIGGER_SUPER_HIGH){
-    rate /= MULT_DECREASE;
+    rate /= mult_decrease;
+    mult_decrease *= 1.1;
   }
   else if(new_rtt > TRIGGER_HIGH){
     rate *= ( 1-beta *(1-(TRIGGER_HIGH/(1+new_rtt))));
     // cout<< "Trigger High" <<endl; 
     additive_increase = ADD_INCREASE_DEFAULT;
+     mult_decrease = MULT_DECREASE; 
   }
   else if (normalized_gradient <= 0){
     double n = 0; 
     rate += (n * additive_increase);
     // cout<< "add increase mode" <<endl; 
     additive_increase = ADD_INCREASE_DEFAULT;
+     mult_decrease = MULT_DECREASE; 
   }
   else {
     // cout<< "Other" <<endl; 
     rate *= 1- (beta * normalized_gradient);
     additive_increase = ADD_INCREASE_DEFAULT;
+     mult_decrease = MULT_DECREASE; 
   }
   // cout<< "window size " << the_window_size<<endl; 
   the_window_size = rate  ;
