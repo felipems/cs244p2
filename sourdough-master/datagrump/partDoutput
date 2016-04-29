@@ -1,0 +1,668 @@
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.2
+MULT_DEC_SCALE 1.5
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1.5
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.95 Mbits/s (78.3% utilization)
+95th percentile per-packet queueing delay: 60 ms
+95th percentile signal delay: 103 ms
+
+Uploading data to server... done.
+
+Upload successful (2119199 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461955324-soophahz
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.2
+MULT_DEC_SCALE 1
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1.5
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.95 Mbits/s (78.3% utilization)
+95th percentile per-packet queueing delay: 60 ms
+95th percentile signal delay: 105 ms
+
+Uploading data to server... done.
+
+Upload successful (2118561 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461955618-ookohwua
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.2
+MULT_DEC_SCALE 1.1
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1.5
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.93 Mbits/s (78.0% utilization)
+95th percentile per-packet queueing delay: 60 ms
+95th percentile signal delay: 104 ms
+
+Uploading data to server... done.
+
+Upload successful (2114684 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461955824-aepeigha
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.2
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1.5
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.98 Mbits/s (79.0% utilization)
+95th percentile per-packet queueing delay: 58 ms
+95th percentile signal delay: 101 ms
+
+Uploading data to server... done.
+
+Upload successful (2130920 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461956145-phewiexe
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.2
+MULT_DEC_SCALE 1.3
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1.5
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.91 Mbits/s (77.6% utilization)
+95th percentile per-packet queueing delay: 61 ms
+95th percentile signal delay: 104 ms
+
+Uploading data to server... done.
+
+Upload successful (2106617 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461956404-rohwaicu
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.2
+MULT_DEC_SCALE 1.4
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1.5
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.94 Mbits/s (78.1% utilization)
+95th percentile per-packet queueing delay: 60 ms
+95th percentile signal delay: 105 ms
+
+Uploading data to server... done.
+
+Upload successful (2115634 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461956708-kadiedoj
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 150
+BETA 0.2
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1.5
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.81 Mbits/s (75.6% utilization)
+95th percentile per-packet queueing delay: 59 ms
+95th percentile signal delay: 105 ms
+
+Uploading data to server... done.
+
+Upload successful (2073701 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461957793-theuphae
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 180
+BETA 0.2
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1.5
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.90 Mbits/s (77.4% utilization)
+95th percentile per-packet queueing delay: 59 ms
+95th percentile signal delay: 104 ms
+
+Uploading data to server... done.
+
+Upload successful (2104440 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461958139-azaejaep
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 200
+BETA 0.2
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1.5
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.89 Mbits/s (77.2% utilization)
+95th percentile per-packet queueing delay: 60 ms
+95th percentile signal delay: 103 ms
+
+Uploading data to server... done.
+
+Upload successful (2100432 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461958991-ahlohchu
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 250
+BETA 0.2
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1.5
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.94 Mbits/s (78.2% utilization)
+95th percentile per-packet queueing delay: 59 ms
+95th percentile signal delay: 104 ms
+
+Uploading data to server... done.
+
+Upload successful (2117982 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461959231-queyitae
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.2
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1.5
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.96 Mbits/s (78.5% utilization)
+95th percentile per-packet queueing delay: 60 ms
+95th percentile signal delay: 102 ms
+
+Uploading data to server... done.
+
+Upload successful (2122484 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461959631-eayiesho
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 100
+BETA 0.2
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1.5
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 2.96 Mbits/s (58.7% utilization)
+95th percentile per-packet queueing delay: 57 ms
+95th percentile signal delay: 102 ms
+
+Uploading data to server... done.
+
+Upload successful (1783059 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461960148-iemiiyab
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 250
+BETA 0.3
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1.5
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.68 Mbits/s (73.1% utilization)
+95th percentile per-packet queueing delay: 56 ms
+95th percentile signal delay: 98 ms
+
+Uploading data to server... done.
+
+Upload successful (2028481 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461960668-aiquaequ
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 250
+BETA 0.4
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.58 Mbits/s (70.9% utilization)
+95th percentile per-packet queueing delay: 51 ms
+95th percentile signal delay: 91 ms
+
+Uploading data to server... done.
+
+Upload successful (1988104 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461961094-aecaenga
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 250
+BETA 0.5
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.38 Mbits/s (67.1% utilization)
+95th percentile per-packet queueing delay: 49 ms
+95th percentile signal delay: 90 ms
+
+Uploading data to server... done.
+
+Upload successful (1921824 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461961344-ohnozaid
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 250
+BETA 0.2
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.95 Mbits/s (78.4% utilization)
+95th percentile per-packet queueing delay: 60 ms
+95th percentile signal delay: 104 ms
+
+Uploading data to server... done.
+
+Upload successful (2122675 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461961593-iepouvai
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 250
+BETA 0.2
+MULT_DEC_SCALE 2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.94 Mbits/s (78.1% utilization)
+95th percentile per-packet queueing delay: 60 ms
+95th percentile signal delay: 103 ms
+
+Uploading data to server... done.
+
+Upload successful (2116812 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461962808-uvaipede
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 250
+BETA 0.2
+MULT_DEC_SCALE 2.5
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.89 Mbits/s (77.1% utilization)
+95th percentile per-packet queueing delay: 62 ms
+95th percentile signal delay: 102 ms
+
+Uploading data to server... done.
+
+Upload successful (2097213 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461963055-ciexoxei
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 250
+BETA 0.2
+MULT_DEC_SCALE 3
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.94 Mbits/s (78.1% utilization)
+95th percentile per-packet queueing delay: 59 ms
+95th percentile signal delay: 104 ms
+
+Uploading data to server... done.
+
+Upload successful (2115858 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461963310-veidaene
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.4
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.58 Mbits/s (71.0% utilization)
+95th percentile per-packet queueing delay: 52 ms
+95th percentile signal delay: 95 ms
+
+Uploading data to server... done.
+
+Upload successful (1990525 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461964141-velaerei
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.4
+MULT_DEC_SCALE 4
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.58 Mbits/s (71.0% utilization)
+95th percentile per-packet queueing delay: 51 ms
+95th percentile signal delay: 97 ms
+
+Uploading data to server... done.
+
+Upload successful (1990840 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461964658-eelohlot
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.4
+MULT_DEC_SCALE 4
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+
+Average capacity: 12.70 Mbits/s
+Average throughput: 9.41 Mbits/s (74.1% utilization)
+95th percentile per-packet queueing delay: 44 ms
+95th percentile signal delay: 41 ms
+
+Uploading data to server... done.
+
+Upload successful (45615 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461964697-mahmooto
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.4
+MULT_DEC_SCALE 4
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+
+Average capacity: 1.07 Mbits/s
+Average throughput: 1.03 Mbits/s (96.4% utilization)
+95th percentile per-packet queueing delay: 124010 ms
+95th percentile signal delay: 161 ms
+
+Uploading data to server... done.
+
+Upload successful (133183688 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461965595-isathico
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.4
+MULT_DEC_SCALE 4
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.54 Mbits/s (70.3% utilization)
+95th percentile per-packet queueing delay: 52 ms
+95th percentile signal delay: 97 ms
+
+Uploading data to server... done.
+
+Upload successful (1977494 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461965796-jieyuaho
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.2
+MULT_DEC_SCALE 4
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.90 Mbits/s (77.4% utilization)
+95th percentile per-packet queueing delay: 60 ms
+95th percentile signal delay: 103 ms
+
+Uploading data to server... done.
+
+Upload successful (2102933 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461966005-meichaik
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.2
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.95 Mbits/s (78.3% utilization)
+95th percentile per-packet queueing delay: 60 ms
+95th percentile signal delay: 104 ms
+
+Uploading data to server... done.
+
+Upload successful (2118904 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461966434-kieghair
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.3
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.72 Mbits/s (73.8% utilization)
+95th percentile per-packet queueing delay: 56 ms
+95th percentile signal delay: 97 ms
+
+Uploading data to server... done.
+
+Upload successful (2039392 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461966720-uajohpei
+
+Listening on :::9090
+TRIGGER_LOW 49
+TRIGGER_HIGH 90
+TRIGGER_SUPER_HIGH 300
+BETA 0.3
+MULT_DEC_SCALE 1.2
+ADD_INCR_SCALE 1.01
+BETA_SCALE 1
+Sending to 100.64.0.1:9090
+terminate called after throwing an instance of 'unix_error'
+  what():  send: Invalid argument
+
+Average capacity: 5.04 Mbits/s
+Average throughput: 3.71 Mbits/s (73.7% utilization)
+95th percentile per-packet queueing delay: 55 ms
+95th percentile signal delay: 98 ms
+
+Uploading data to server... done.
+
+Upload successful (2037193 bytes).
+For analysis, please visit:
+
+   http://cs344g.keithw.org/report?beckywiththegoodhair-1461968031-biefeehi
+
