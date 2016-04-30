@@ -10,7 +10,7 @@
 #define TRIGGER_LOW 49
 #define TRIGGER_HIGH 90
 #define TRIGGER_SUPER_HIGH 300
-#define BETA 0.3
+#define BETA 0.2
 #define MULT_DEC_SCALE 1.2
 #define ADD_INCR_SCALE 1.01
 #define BETA_SCALE 1
